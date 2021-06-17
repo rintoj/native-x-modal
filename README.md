@@ -52,12 +52,12 @@ function MyComponent() {
   const [visible, setVisible] = React.useState(false)
   return (
     <ConfirmationModal
-			visible={visible}
-			onOk={onOkFn}
-			onCancel={onCancelFn}
-			okText='OK'
-			cancelText='Cancel'
-			onClose={() => setVisible(false)}>
+      visible={visible}
+      onOk={onOkFn}
+      onCancel={onCancelFn}
+      okText='OK'
+      cancelText='Cancel'
+      onClose={() => setVisible(false)}>
       ...
     </Modal>
   )
