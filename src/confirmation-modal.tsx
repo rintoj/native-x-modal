@@ -35,7 +35,7 @@ export function ConfirmationModal({
   }, [onClose, onCancel])
 
   return (
-    <Modal {...props} onClose={onClose}>
+    <Modal {...props} onClose={onClose} padding='normal'>
       <Stack padding='normal'>
         <Text alignCenter>{children}</Text>
       </Stack>

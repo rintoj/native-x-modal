@@ -1,12 +1,12 @@
 import { Stack } from 'native-x-stack'
-import { COLOR } from 'native-x-theme'
+import { COLOR, ContainerStyleProps } from 'native-x-theme'
 import React from 'react'
 import { Platform } from 'react-native'
 import RNModal from 'react-native-modal'
 import { ModalCloseButton } from './modal-close-button'
 import { ModalOverlay } from './modal-overlay'
 
-export interface ModalProps {
+export interface ModalProps extends ContainerStyleProps {
   children?: any
   visible?: boolean
   showClose?: boolean
@@ -14,7 +14,7 @@ export interface ModalProps {
   width?: number
 }
 
-export function Modal({ children, visible, onClose, width, showClose }: ModalProps) {
+export function Modal({ children, visible, onClose, width, showClose, ...props }: ModalProps) {
   return (
     <RNModal
       coverScreen
@@ -27,7 +27,7 @@ export function Modal({ children, visible, onClose, width, showClose }: ModalPro
       avoidKeyboard
       customBackdrop={<ModalOverlay />}
     >
-      <Stack fill alignCenter alignMiddle padding='normal'>
+      <Stack fill alignCenter alignMiddle {...props}>
         <Stack
           alignCenter
           alignMiddle
