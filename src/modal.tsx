@@ -27,14 +27,14 @@ export function Modal({ children, visible, onClose, width, showClose, ...props }
       avoidKeyboard
       customBackdrop={<ModalOverlay />}
     >
-      <Stack fill alignCenter alignMiddle {...props}>
+      <Stack fill alignCenter alignMiddle>
         <Stack
           alignCenter
           alignMiddle
           backgroundColor={COLOR.PRIMARY}
-          padding='normal'
           borderRadius='large'
           width={width}
+          {...props}
         >
           {children}
           {showClose && <ModalCloseButton onTap={onClose} />}
