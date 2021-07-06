@@ -11,6 +11,7 @@ interface Props extends ModalProps {
   okText?: string
   cancelText?: string
   okButtonBackgroundColor?: string
+  cancelButtonBackgroundColor?: string
   onOk?: () => void
   onCancel?: () => void
   onClose?: () => void
@@ -21,6 +22,7 @@ export function ConfirmationModal({
   okText = 'OK',
   cancelText = 'Cancel',
   okButtonBackgroundColor = COLOR.ACCENT,
+  cancelButtonBackgroundColor = COLOR.SECONDARY,
   onOk,
   onCancel,
   onClose,
@@ -44,7 +46,7 @@ export function ConfirmationModal({
       <Spacer size='small' />
       <Stack horizontal justifyBetween>
         <Button
-          backgroundColor={COLOR.SECONDARY}
+          backgroundColor={cancelButtonBackgroundColor}
           onTap={handleCancel}
           rounded
           size='small'
