@@ -64,17 +64,21 @@ function MyComponent() {
 }
 ```
 
-| Property              | Default Value | Usage                     |
-| --------------------- | ------------- | ------------------------- |
-| children?: string     |               | Content                   |
-| visible?: boolean     |               | Show modal                |
-| showClose?: boolean   |               | Show close button         |
-| width?: number        |               | Width of the modal        |
-| onClose?: () => void  |               | On close modal            |
-| onOk?: () => void     |               | On click on ok button     |
-| onCancel?: () => void |               | On click on cancel button |
-| okText?: string       | OK            | Label of ok button        |
-| cancelText?: string   | Cancel        | Label of cancel button    |
+| Property                              | Default Value | Usage                             |
+| ------------------------------------- | ------------- | --------------------------------- |
+| children?: string                     |               | Content                           |
+| visible?: boolean                     |               | Show modal                        |
+| showClose?: boolean                   |               | Show close button                 |
+| width?: number                        |               | Width of the modal                |
+| onClose?: () => void                  |               | On close modal                    |
+| onOk?: () => void                     |               | On click on ok button             |
+| onCancel?: () => void                 |               | On click on cancel button         |
+| okText?: string                       | OK            | Label of ok button                |
+| okButtonBackgroundColor?: string      |               | Background color of ok button     |
+| okTextColor?: string                  |               | Text color of ok button           |
+| cancelText?: string                   | Cancel        | Label of cancel button            |
+| cancelButtonBackgroundColor?: string  |               | Background color of cancel button |
+| cancelTextColor?: string              |               | Text color of cancel button       |
 
 ## Automatic Release
 
