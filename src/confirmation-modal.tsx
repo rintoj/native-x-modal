@@ -22,10 +22,10 @@ interface Props extends ModalProps {
 export function ConfirmationModal({
   children,
   okText = 'OK',
-  cancelText = 'Cancel',
   okButtonBackgroundColor = COLOR.ACCENT,
-  cancelButtonBackgroundColor = COLOR.SECONDARY,
   okTextColor,
+  cancelText = 'Cancel',
+  cancelButtonBackgroundColor = COLOR.SECONDARY,
   cancelTextColor,
   onOk,
   onCancel,
