@@ -33,7 +33,7 @@ export function Modal({ children, visible, onClose, width, showClose, ...props }
       useNativeDriver={Platform.OS !== 'web'}
       useNativeDriverForBackdrop={Platform.OS !== 'web'}
       avoidKeyboard
-      customBackdrop={<ModalOverlay />}
+      customBackdrop={<ModalOverlay onTap={Platform.OS == 'web' ? onClose : undefined} />}
     >
       <Stack
         alignCenter
