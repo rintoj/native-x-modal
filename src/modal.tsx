@@ -3,6 +3,7 @@ import { COLOR, ContainerStyleProps } from 'native-x-theme'
 import React from 'react'
 import { Platform } from 'react-native'
 import RNModal from 'react-native-modal'
+import { styles as s } from 'tachyons-react-native'
 import { ModalCloseButton } from './modal-close-button'
 import { ModalOverlay } from './modal-overlay'
 
@@ -15,6 +16,13 @@ export interface ModalProps extends ContainerStyleProps {
 }
 
 export function Modal({ children, visible, onClose, width, showClose, ...props }: ModalProps) {
+  const styles = React.useMemo(
+    () => ({
+      container: [s.selfCenter, { width: width ?? 'fit-content' }] as any,
+    }),
+    [width],
+  )
+
   return (
     <RNModal
       coverScreen
@@ -25,20 +33,19 @@ export function Modal({ children, visible, onClose, width, showClose, ...props }
       useNativeDriver={Platform.OS !== 'web'}
       useNativeDriverForBackdrop={Platform.OS !== 'web'}
       avoidKeyboard
-      customBackdrop={<ModalOverlay />}
+      customBackdrop={<ModalOverlay onTap={Platform.OS == 'web' ? onClose : undefined} />}
     >
-      <Stack fill alignCenter alignMiddle>
-        <Stack
-          alignCenter
-          alignMiddle
-          backgroundColor={COLOR.PRIMARY}
-          borderRadius='large'
-          width={width}
-          {...props}
-        >
-          {children}
-          {showClose && <ModalCloseButton onTap={onClose} />}
-        </Stack>
+      <Stack
+        alignCenter
+        alignMiddle
+        backgroundColor={COLOR.PRIMARY}
+        borderRadius='large'
+        width={width}
+        style={styles.container}
+        {...props}
+      >
+        {children}
+        {showClose && <ModalCloseButton onTap={onClose} />}
       </Stack>
     </RNModal>
   )
