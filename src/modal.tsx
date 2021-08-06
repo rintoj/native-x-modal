@@ -1,7 +1,7 @@
 import { Stack } from 'native-x-stack'
 import { COLOR, ContainerStyleProps } from 'native-x-theme'
 import React from 'react'
-import { Platform } from 'react-native'
+import { Platform, ViewStyle } from 'react-native'
 import RNModal from 'react-native-modal'
 import { styles as s } from 'tachyons-react-native'
 import { ModalCloseButton } from './modal-close-button'
@@ -15,14 +15,11 @@ export interface ModalProps extends ContainerStyleProps {
   width?: number
 }
 
-export function Modal({ children, visible, onClose, width, showClose, ...props }: ModalProps) {
-  const styles = React.useMemo(
-    () => ({
-      container: [s.selfCenter, { width: width ?? 'fit-content' }] as any,
-    }),
-    [width],
-  )
+const styles = {
+  container: [s.selfCenter] as ViewStyle,
+}
 
+export function Modal({ children, visible, onClose, width, showClose, ...props }: ModalProps) {
   return (
     <RNModal
       coverScreen
