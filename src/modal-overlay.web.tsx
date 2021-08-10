@@ -14,7 +14,7 @@ interface Props {
 
 export function ModalOverlay({ onTap }: Props) {
   const { getBackgroundColor } = useTheme()
-  const backgroundColor = getBackgroundColor(COLOR.SECONDARY)
+  const backgroundColor = getBackgroundColor?.(COLOR.SECONDARY)
   return (
     <Tappable style={styles.container} onTap={onTap}>
       <View style={[styles.container, backgroundColor]} />
