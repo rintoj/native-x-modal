@@ -34,16 +34,13 @@
   },
   "dependencies": {
     "@react-native-community/blur": "^3.6.0",
-    "native-x-button": "^1.0.10",
-    "native-x-icon": "^1.0.8",
+    "native-x-button": "^1.0.11",
+    "native-x-icon": "^1.0.9",
     "native-x-spacer": "^1.0.0",
-    "native-x-stack": "^1.0.11",
+    "native-x-stack": "^1.0.12",
     "native-x-tappable": "^1.0.4",
-    "native-x-text": "^1.0.6",
+    "native-x-text": "^1.0.8",
     "react-native-modal": "^11.10.0",
     "tachyons-react-native": "^1.0.4"
-  },
-  "peerDependencies": {
-    "native-x-theme": "*"
   }
 }
