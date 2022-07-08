@@ -5800,21 +5800,21 @@ nanomatch@^1.2.9:
     snapdragon "^0.8.1"
     to-regex "^3.0.1"
 
-native-x-button@^1.0.9:
-  version "1.0.9"
-  resolved "https://registry.yarnpkg.com/native-x-button/-/native-x-button-1.0.9.tgz#66c2cec9bf82ff7bd1b35d177669b348f7ff48b1"
-  integrity sha512-xPV9k2iOODekGn6I7tIiWZSSdtV8A6jTfWwH+iJALqrmyNi7dLCeYqo1ohZ4Q1hkn+b4tpoyH4yFa2aCtMI+CQ==
+native-x-button@^1.0.12:
+  version "1.0.12"
+  resolved "https://registry.yarnpkg.com/native-x-button/-/native-x-button-1.0.12.tgz#479f7e15aeee494162accf5825aa2340c1d5cf1f"
+  integrity sha512-pf8o3DRSXN1OJ6HXnMJAC3AjCjP3OmaNllghHHQ5kf2fELJez4KJ5/6ZWK39r+C2Yvns4YkUIe8YdEOTGgrVjw==
   dependencies:
-    native-x-tappable "^1.0.3"
-    native-x-theme "^1.0.9"
+    native-x-tappable "^1.0.4"
+    native-x-theme "^1.0.10"
     tachyons-react-native "^1.0.4"
 
-native-x-icon@^1.0.8:
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/native-x-icon/-/native-x-icon-1.0.8.tgz#8976f55eca70b035ff6db3d7a889e523c1067116"
-  integrity sha512-LboibpS4SmND08IddFeS47hqddGTiHOQSuFwjOOtmWGbSO3HRpuzzh2d95+OLT7zp1bOvcK3F+7alTwZWHPCQA==
+native-x-icon@^1.0.11:
+  version "1.0.11"
+  resolved "https://registry.yarnpkg.com/native-x-icon/-/native-x-icon-1.0.11.tgz#256aca2d0cdb691c4f779ae9a128fe338b312416"
+  integrity sha512-LiM2IAHzQyj9mt4dIhwnd0ZQtYlqKFwwfCwEuGHkGDrdxaXZMSzUkWrraODRWYHWLQ7rpDzzJcRo74SXEoGVmQ==
   dependencies:
-    native-x-theme "^1.0.9"
+    native-x-theme "^1.0.10"
     react-native-svg "^12.1.0"
     tachyons-react-native "^1.0.4"
 
@@ -5825,31 +5825,31 @@ native-x-spacer@^1.0.0:
   dependencies:
     tachyons-react-native "^1.0.4"
 
-native-x-stack@^1.0.11:
+native-x-stack@^1.0.12:
+  version "1.0.12"
+  resolved "https://registry.yarnpkg.com/native-x-stack/-/native-x-stack-1.0.12.tgz#a85a40702b5c716cca94ac7468a884ac8c8908b7"
+  integrity sha512-KVzwTSZZVz2qEcka6C+jFH4e+ZLaDuRiuaW/iDPmxeJiTOLdr/58mi+LiIzoAbltaeT4aQgnankAT8QZGWHUZA==
+  dependencies:
+    native-x-theme "^1.0.10"
+    tachyons-react-native "^1.0.4"
+
+native-x-tappable@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/native-x-tappable/-/native-x-tappable-1.0.4.tgz#80a301d46e515f5b7806d4428ee246333b190b05"
+  integrity sha512-kYYukllwvG2Q8fnpba1/ncbqQ8IkbL9m/0OCvqUer/w0FQt/pK+rW+zzLBvbo2do/AJF/Sc5pm5tPkN0PRSsiw==
+
+native-x-text@^1.0.10:
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/native-x-text/-/native-x-text-1.0.10.tgz#f765aadd8e858c328e09be02089383a9d40d28fb"
+  integrity sha512-eMbGI0tY3juR8+bU114uMaDf98TIwZ3/TVQ4P+Qsf12X6+ErUNtZfDi7Xuq7aYkIQwVC/bXbW6SzKiWhO6s79w==
+  dependencies:
+    native-x-theme "^1.0.10"
+    tachyons-react-native "^1.0.4"
+
+native-x-theme@^1.0.10:
   version "1.0.11"
-  resolved "https://registry.yarnpkg.com/native-x-stack/-/native-x-stack-1.0.11.tgz#2c0dbf12a6ae99e93e16445447662bc568b6cf00"
-  integrity sha512-AaoNmHwzoV7ryeXWd/WHtVkMq+qJTqNq7ml/smNByYfl/arhlNU7w5o119soFu1VfNO7PbktOSKFxsoF6QZnlA==
-  dependencies:
-    native-x-theme "^1.0.9"
-    tachyons-react-native "^1.0.4"
-
-native-x-tappable@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/native-x-tappable/-/native-x-tappable-1.0.3.tgz#556889eb312ab9d08bc1c5615d3eff9dd3b39dfe"
-  integrity sha512-1hPHNSFSMO/ToPOvy0zUo/uUKuXAiiKXpe8HmXbw5cIx3CyV2patKYLY/hEPUml4NNsLV5aj9AFTNmKRn/E3Vg==
-
-native-x-text@^1.0.6:
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/native-x-text/-/native-x-text-1.0.6.tgz#770eb3396b033dc409295f1dcf4d4c8f9dd50297"
-  integrity sha512-VhIx4UBRrf8vVEP8xbvENEeLwMsb7DfInINPt1wmcB28+dKO1gFmQxK3hYXXTTazcUkG5FD440z1gZtO85s2Bw==
-  dependencies:
-    native-x-theme "^1.0.9"
-    tachyons-react-native "^1.0.4"
-
-native-x-theme@^1.0.9:
-  version "1.0.9"
-  resolved "https://registry.yarnpkg.com/native-x-theme/-/native-x-theme-1.0.9.tgz#3a009c5e2ca5ead1a8f2a79650a9247f904f0bb4"
-  integrity sha512-O+uo9tAfOb5HcPqtibJ4smvdpKODy5JH9iovQnuy6j3K/I2pH9+n4k5B908JwXdBSZNBlLGp0EMB2gGp8crijg==
+  resolved "https://registry.yarnpkg.com/native-x-theme/-/native-x-theme-1.0.11.tgz#ff0c97f33e99ca265648450a14d448a7548c7397"
+  integrity sha512-Hf+U6vkgdqoJ33Lzra5PUYJCC0D33vxSca0Q2wOqWj5a4wxVeQ7mOMFD2SHYbQaTKWANMoDU10jQiWgHRgYXeA==
   dependencies:
     tachyons-react-native "^1.0.4"
 
@@ -6989,10 +6989,10 @@ react-native-animatable@1.3.3:
   dependencies:
     prop-types "^15.7.2"
 
-react-native-modal@^11.10.0:
-  version "11.10.0"
-  resolved "https://registry.yarnpkg.com/react-native-modal/-/react-native-modal-11.10.0.tgz#94a6d3a2428ba5228cfb4dc174cacea79c871591"
-  integrity sha512-syRYDJYSh16bR37R5EKU9T/wC+5bEOfF17IUqf5URdhbEDd+hxyMInC++l45E8oI+MtdOaEp9yAws5xDqk8dnA==
+react-native-modal@^13.0.1:
+  version "13.0.1"
+  resolved "https://registry.yarnpkg.com/react-native-modal/-/react-native-modal-13.0.1.tgz#691f1e646abb96fa82c1788bf18a16d585da37cd"
+  integrity sha512-UB+mjmUtf+miaG/sDhOikRfBOv0gJdBU2ZE1HtFWp6UixW9jCk/bhGdHUgmZljbPpp0RaO/6YiMmQSSK3kkMaw==
   dependencies:
     prop-types "^15.6.2"
     react-native-animatable "1.3.3"
@@ -7514,10 +7514,10 @@ scheduler@0.19.1:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
 
-semantic-release@^17.3.8:
-  version "17.4.3"
-  resolved "https://registry.yarnpkg.com/semantic-release/-/semantic-release-17.4.3.tgz#e01b2d0c0adaf5a6cc427359f1df755d1e908927"
-  integrity sha512-lTOUSrkbaQ+TRs3+BmtJhLtPSyiO7iTGmh5SyuEFqNO8HQbQ4nzXg4UlPrDQasO/C0eFK/V0eCbOzJdjtKBOYw==
+semantic-release@^17.4.4:
+  version "17.4.7"
+  resolved "https://registry.yarnpkg.com/semantic-release/-/semantic-release-17.4.7.tgz#88e1dce7294cc43acc54c4e0a83f582264567206"
+  integrity sha512-3Ghu8mKCJgCG3QzE5xphkYWM19lGE3XjFdOXQIKBM2PBpBvgFQ/lXv31oX0+fuN/UjNFO/dqhNs8ATLBhg6zBg==
   dependencies:
     "@semantic-release/commit-analyzer" "^8.0.0"
     "@semantic-release/error" "^2.2.0"

@@ -40,7 +40,7 @@
     "native-x-stack": "^1.0.12",
     "native-x-tappable": "^1.0.4",
     "native-x-text": "^1.0.10",
-    "react-native-modal": "^11.10.0",
+    "react-native-modal": "^13.0.1",
     "tachyons-react-native": "^1.0.4"
   }
 }
