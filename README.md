@@ -35,13 +35,14 @@ function MyComponent() {
 
 ## API
 
-| Property             | Default Value | Usage              |
-| -------------------- | ------------- | ------------------ |
-| children?: string    |               | Content            |
-| visible?: boolean    |               | Show modal         |
-| showClose?: boolean  |               | Show close button  |
-| width?: number       |               | Width of the modal |
-| onClose?: () => void |               | On close modal     |
+| Property                | Default Value | Usage                 |
+| ----------------------- | ------------- | --------------------- |
+| children?: string       |               | Content               |
+| visible?: boolean       |               | Show modal            |
+| showClose?: boolean     |               | Show close button     |
+| width?: number          |               | Width of the modal    |
+| onClose?: () => void    |               | On close modal        |
+| avoidKeyboard?: boolean |               | Should avoid keyboard |
 
 ## Confirmation Modal
 
@@ -71,6 +72,7 @@ function MyComponent() {
 | showClose?: boolean                  |               | Show close button                 |
 | width?: number                       |               | Width of the modal                |
 | onClose?: () => void                 |               | On close modal                    |
+| avoidKeyboard?: boolean              |               | Should avoid keyboard             |
 | onOk?: () => void                    |               | On click on ok button             |
 | onCancel?: () => void                |               | On click on cancel button         |
 | okText?: string                      | OK            | Label of ok button                |
